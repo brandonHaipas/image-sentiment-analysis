@@ -27,4 +27,10 @@ pip install -r requirements.txt
 ```
 conda install --file requirements.txt
 ```
-Now that the requirements have successfully been installed, download the dataset from data.w
+Now that the requirements have successfully been installed, download the dataset [Image Sentiment Polarity](https://data.world/crowdflower/image-sentiment-polarity), save it in the root folder for this project and run this command:
+```
+python get-data.py
+```
+After a couple of hours all the images will be saved in the ``images`` folder, and the file ``color-dataset.csv`` should've been created.
+
+After that, explore the notebook inside this project as you see fit.
