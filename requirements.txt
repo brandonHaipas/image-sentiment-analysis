@@ -4,3 +4,4 @@ numpy
 colorthief
 scikit-learn
 jupyterlab
+matplotlib
