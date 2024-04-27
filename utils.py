@@ -1,4 +1,5 @@
 import requests
+from colorthief import ColorThief
 
 # now let's define a function to save the images. this function is meant to be placed in a try except fashion afterwards
 def save_img(pic_url, img_name):
@@ -28,3 +29,14 @@ def create_dict (num):
     result[f"blue_{str(i)}"] = []
   result["label"] = []
   return result
+
+def imagen_colores(img):
+    color_thief = ColorThief(img)
+    palette = color_thief.get_palette(color_count= num, quality = 1)
+    result = []
+    for i in range(0, num):
+        color = palette[i]
+        result.append(color[0])
+        result.append(color[1])
+        result.append(color[2])
+    return result
