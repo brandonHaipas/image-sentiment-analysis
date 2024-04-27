@@ -30,7 +30,8 @@ def create_dict (num):
   result["label"] = []
   return result
 
-def imagen_colores(img):
+#function to transform an image img to an array of the rgb representation of the first num more important colors
+def img_to_colors(img, num):
     color_thief = ColorThief(img)
     palette = color_thief.get_palette(color_count= num, quality = 1)
     result = []

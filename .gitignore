@@ -160,5 +160,5 @@ cython_debug/
 #.idea/
 
 *.csv
-
+dummy_images/
 images/
